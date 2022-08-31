@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Etch-A-Sketch</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Etch-A-Sketch</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="specifications">
+                <input type="color" name="favcolor" id="favcolor" class="hov" value="#1f2937">
+                <button id="cbtn" class="btn hov">Color mode</button>
+                <button id="rbtn" class="btn hov">Rainbow mode</button>
+                <button id="ebtn" class="btn hov">Eraser</button>
+                <button id="clrbtn" class="btn hov">Clear</button>
+                <div class="slider">
+                    <span id="demo"></span>
+                    <input type="range" id="myrange" class="slider-input" min="0" max="64" value="16">
+                </div>
+            </div>
+            <div class="grids"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            Copyright &copy Utkarsh 2022
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -24,11 +24,11 @@ function setupGrid() {
 
     for (let i = 0; i < slider.value * slider.value; i++) {
         let div = document.createElement('div');
-        div.style.height = `${500 / slider.value}px`;
-        div.style.width = `${500 / slider.value}px`;
         div.classList.add('grid');
         grids.appendChild(div);
     }
+    grids.style.gridTemplateColumns = `repeat(${slider.value}, 1fr)`;
+    grids.style.gridTemplateRows = `repeat(${slider.value}, 1fr)`;
 }
 
 function setupColor(color) {
